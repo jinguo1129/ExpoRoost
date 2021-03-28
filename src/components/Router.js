@@ -13,6 +13,7 @@ const Router = StackNavigator(
         initialRouteName: 'Home',
         headerMode: 'none', 
         mode: 'card',
+        method: 'post',
     }
 );
 export default Router;
