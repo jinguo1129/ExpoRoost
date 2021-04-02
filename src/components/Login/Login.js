@@ -22,7 +22,7 @@ export default class Login extends Component {
     render(){
         return(
             <View>
-                <Text style={{ textAlign: 'center', fontSize: 16, fontStyle: 'italic', color: 'red', fontWeight: '200' }}>
+                <Text style={{ textAlign: 'center', fontSize: 16, fontStyle: 'bold', color: 'red', fontWeight: '800' }}>
                     "If you're good at something, never do it for free, offer it as a service, at a small fee."
                 </Text>
             </View>
