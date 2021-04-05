@@ -7,7 +7,7 @@ import {
 } from '../actions/types';
 
 const INITIAL_STATE = {
-  email: '',
+  email: 'test@react.org',
   password: '',
   token: '',
   loading: ''
@@ -15,8 +15,8 @@ const INITIAL_STATE = {
 
 export default function (state = INITIAL_STATE, action) {
   switch (action.type) {
-    // case REHYDRATE:
-    //   return action.payload;
+     case REHYDRATE:
+       return action.payload;
     case EMAIL_LOGIN_CHANGED:
       console.log(action);
       return { ...state, email: action.payload };
@@ -27,7 +27,6 @@ export default function (state = INITIAL_STATE, action) {
       return { token: action.payload };
     case FACEBOOK_LOGIN_FAIL:
       return { token: null };
-
     default:
       return state;
   }
