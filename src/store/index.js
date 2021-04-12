@@ -9,10 +9,10 @@ const store = createStore(
   {},
   compose(
     applyMiddleware(thunk),
-    // autoRehydrate()
+    autoRehydrate()
   )
 );
 
-// persistStore(store, { storage: AsyncStorage });
+persistStore(store, { storage: AsyncStorage });
 
 export default store;
