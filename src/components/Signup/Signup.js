@@ -21,6 +21,7 @@ class Signup extends Component{
         super();
         this.state={
             showView : true,
+            keepCache: false,
         };
     }
     componentWillMount(){
