@@ -13,9 +13,9 @@ import {
   TouchableOpacity
 } from 'react-native';
 
-//import { connect } from 'react-redux';
-//import * as ractions from '../../actions';
-//import { Button } from 'native-base';
+import { connect } from 'react-redux';
+import * as ractions from '../../actions';
+import { Button } from 'native-base';
 
 import {Icon} from 'native-base';
 export default class Home extends Component{
@@ -146,8 +146,8 @@ const styles = StyleSheet.create({
     mainContent: {
         flex : 1,
         backgroundColor : '#518ace', 
-        marginTop: 20, 
-        height : 50,  
+        marginTop: 10, 
+        height : 40,  
         justifyContent : 'center' 
     },
     
