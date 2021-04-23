@@ -12,9 +12,9 @@ import {
 } from '../actions/types';
 
 const INITIAL_STATE = {
-  userID: '',
+  userID: 'test',
   token: '',
-  email: '',
+  email: 'test@react.org',
   password: '',
   retrypassword: '',
   firstname: '',
@@ -27,25 +27,25 @@ const INITIAL_STATE = {
 export default function (state = INITIAL_STATE, action) {
   switch (action.type) {
     case REG_EMAIL_CHANGED:
-      console.log(action);
+      // console.log(action);
       return { ...state, email: action.payload };
     case REG_PASSWORD_CHANGED:
-      console.log(action);
+      // console.log(action);
       return { ...state, password: action.payload };
     case REG_RETRYPASSWORD_CHANGED:
-      console.log(action);
+      // console.log(action);
       return { ...state, retrypassword: action.payload };
     case REG_FIRSTNAME_CHANGED:
-      console.log(action);
+      // console.log(action);
       return { ...state, firstname: action.payload };
     case REG_LASTNAME_CHANGED:
-      console.log(action);
+      // console.log(action);
       return { ...state, lastname: action.payload };
     case REG_GENDER_CHANGED:
-      console.log(action);
+      // console.log(action);
       return { ...state, gender: action.payload };
     case REG_DOB_CHANGED:
-      console.log(action);
+      // console.log(action);
       return { ...state, dob: action.payload };
     case REG_USER_SUCCESS:
       alert('success');
